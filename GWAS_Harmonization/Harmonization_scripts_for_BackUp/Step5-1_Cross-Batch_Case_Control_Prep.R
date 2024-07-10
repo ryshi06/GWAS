@@ -230,7 +230,7 @@ control_std.coord <- control_par.coord
 for (i in 1:14)
   control_std.coord[,i] <- (control_par.coord[,i] - control_rangel[i])/(control_rangeh[i]-control_rangel[i])
 
-pdf("./pseudoGWAS_input/All_Cohorts_Control_N7555_PCA Parallel Coorinates.pdf")
+pdf("./pseudoGWAS_input/All_Cohorts_Control_PCA Parallel Coorinates.pdf")
 plot(c(0,15), c(0,1), type = 'n', axes = FALSE, ylab = "", xlab = "",
      main = "Parallel Coordinates Plot for GWAS1,2,3,4,5,GEM cohorts controls:
      White: blue, Black: red, Asian: green, Others: orange")
